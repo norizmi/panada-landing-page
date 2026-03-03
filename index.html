@@ -185,15 +185,6 @@
     .reveal.from-scale { transform: scale(0.9); }
     .reveal.visible { opacity: 1; transform: translateY(0) translateX(0) scale(1); }
 
-    /* STATS */
-    .stats-bar { background: var(--white); border-bottom: 3px solid var(--gold); padding: 2.5rem 1.5rem; position: relative; z-index: 5; }
-    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 900px; margin: 0 auto; text-align: center; }
-    .stat-item { padding: 1rem; position: relative; }
-    .stat-item:not(:last-child)::after { content: ''; position: absolute; right: 0; top: 20%; height: 60%; width: 1px; background: rgba(61,43,31,0.1); }
-    .stat-number { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 900; color: var(--gold); line-height: 1; }
-    .stat-label { font-size: 0.8rem; color: var(--brown-light); margin-top: 0.4rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
-    @media (max-width: 600px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } .stat-item:nth-child(2)::after { display: none; } }
-
     /* PAIN TABS */
     .pain-section { background: var(--cream); }
     .pain-tabs { display: flex; gap: 0.5rem; margin: 2rem 0; flex-wrap: wrap; }
@@ -398,16 +389,7 @@
     </div>
     <div class="scroll-indicator"><div class="scroll-mouse"></div>SCROLL</div>
   </section>
-
-  <div class="stats-bar">
-    <div class="stats-grid">
-      <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="8">0</span>+</div><div class="stat-label">Tahun Berpengalaman</div></div>
-      <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="1000">0</span>+</div><div class="stat-label">Panada Terjual</div></div>
-      <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="100">0</span>%</div><div class="stat-label">Homemade</div></div>
-      <div class="stat-item reveal"><div class="stat-number"><span class="counter" data-target="5">0</span>⭐</div><div class="stat-label">Rating Pelanggan</div></div>
-    </div>
-  </div>
-
+  
   <section class="pain-section" id="masalah">
     <div class="container">
       <div class="reveal"><p class="section-label">Pernah merasakan ini?</p><h2 class="section-title">Masalah vs Solusi</h2><p class="section-desc">Klik tab di bawah untuk melihat masalah yang sering dialami dan solusi dari Pastry Millennial.</p></div>
@@ -727,3 +709,4 @@
   </script>
 </body>
 </html>
+
